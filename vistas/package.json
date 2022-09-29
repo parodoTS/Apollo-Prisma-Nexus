@@ -1,0 +1,24 @@
+{
+  "name": "vistas",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "sst start",
+    "build": "sst build",
+    "deploy": "sst deploy --stage=dev",
+    "remove": "sst remove",
+    "console": "sst console"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-msk-alpha": "2.24.0-alpha.0",
+    "@serverless-stack/cli": "^1.2.19",
+    "@serverless-stack/resources": "^1.2.19",
+    "@tsconfig/node16": "^1.0.2",
+    "aws-cdk-lib": "^2.40.0",  
+    "typescript": "^4.7.3",
+    "vitest": "^0.14.2"
+  },
+  "workspaces": [
+    "my-prisma"
+  ]
+}
