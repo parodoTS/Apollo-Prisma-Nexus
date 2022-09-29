@@ -22,7 +22,7 @@ First of all, mention that in this project we have **separated the CDK code** (u
 
 Create a **SST app, with JS** (In MyStack, add all the infra needed).
 
-**Prisma currently do not support using the Data API endpoint** to access the serverless RDS cluster**(Aurora Serverless v1**). That is why we are going to use standard connection to the DB, so the **Lambda function must be in the same VPC as the cluster**, in order to connect to it.
+**Prisma currently do not support using the Data API endpoint** to access the serverless RDS cluster (**Aurora Serverless v1**). That is why we are going to use standard connection to the DB, so the **Lambda function must be in the same VPC as the cluster**, in order to connect to it.
 
 The RDS credentials will be stored in Secret Manager, which allows us to rotate them and keep them secure. In order to get the RDS credentials, our Lambda need to connect to Secret Manager service, so we need to **add a VPC endpoint** for this.
 
